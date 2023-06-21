@@ -1,0 +1,426 @@
+@font-face {
+    font-family:myfont;
+    src: url(OpenSans-VariableFont_wdth,wght.ttf);
+}
+body{
+    font-family:myfont;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+#logo{
+    width:230px;
+    margin:8px;
+}
+#menu{
+    color:black;
+    text-decoration:none;
+    position:relative;
+    bottom:60px;
+    left: 100px;
+}
+#menu:hover{
+    box-shadow: 0 0 0 10px rgba(113, 119, 128,.5);
+    background-color:rgba(113, 119, 128,.5);
+    border-radius: 8px;
+    transition:0.7s;
+}
+#menu2{
+    color:black;
+    text-decoration:none;
+    position:relative;
+    bottom:60px;
+    left: 200px;
+}
+#menu2:hover{
+    box-shadow: 0 0 0 10px rgba(113, 119, 128,.5);
+    background-color:rgba(113, 119, 128,.5);
+    border-radius: 8px;
+    transition:0.7s;
+}
+#menu3{
+    color:black;
+    text-decoration:none;
+    position:relative;
+    bottom:60px;
+    left: 300px;
+}
+#menu3:hover{
+    box-shadow: 0 0 0 10px rgba(113, 119, 128,.5);
+    background-color:rgba(113, 119, 128,.5);
+    border-radius: 8px;
+    transition:0.7s;
+}
+#login{
+    color:black;
+    text-decoration:none;
+    float:right;
+    margin:8px;
+    position:relative;
+    top:50px;
+    right: 30px;
+}
+#login:hover{
+    box-shadow: 0 0 0 10px rgba(113, 119, 128,.5);
+    background-color:rgba(113, 119, 128,.5);
+    border-radius: 8px;
+    transition:0.7s;
+}
+/* Container holding the image and the text */
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+/* Centered text */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+#mainimg{
+    border-radius:20px;
+    filter: brightness(70%);
+}
+#rentbtn{
+    color:white;
+    font-size:large;
+    box-shadow: 0 0 0 10px #5b5d61;
+    background-color:#5b5d61;
+    border-radius:10px;
+    border:#5b5d61;
+    cursor: pointer;
+}
+#rentbtn:hover{
+    box-shadow: 0 0 0 10px rgba(113, 119, 128,.5);
+    background-color:rgba(113, 119, 128,.5);
+    border-radius: 8px;
+    transition:0.7s;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    margin:8px;
+ }
+
+ /* Track */
+ ::-webkit-scrollbar-track {
+   background: white; 
+   margin:8px;
+ }
+
+ /* Handle */
+ ::-webkit-scrollbar-thumb {
+   background: #5b5d61; 
+   border-radius: 10px;
+   margin:8px;
+ }
+
+ /* Handle on hover */
+ ::-webkit-scrollbar-thumb:hover {
+   transition: 7s;
+   background: rgba(113, 119, 128); 
+   margin:8px;
+ }
+ .aboutmain{
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+ }
+ .aboutmain.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+p{
+    text-align: center;
+    font-style: italic;
+    font-family:'Times New Roman', Times, serif;
+    font-size:x-large;
+ }
+ #hallimg{
+    border-radius:20px;
+}
+.halls{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: 1s all ease;
+}
+.halls.active{
+  transform: translateY(0);
+  opacity: 1;
+}
+.card1 {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    height:350px;
+    text-align: center;
+    font-family: arial;
+    border-radius:20px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  
+  .price {
+    color: grey;
+    font-size: 22px;
+  }
+  
+  .card1 button {
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+    border-radius:20px;
+  }
+  
+  .card1 button:hover {
+    opacity: 0.7;
+    transition: 0.7s;
+  }
+  #morehallbtn{
+    border: none;
+    outline: 0;
+    padding: 12px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 500px;
+    font-size: 18px;
+    border-radius:20px;
+  }
+  #morehallbtn:hover{
+    opacity: 0.7;
+    transition: 0.7s;
+  }
+  #stockimg{
+    float: left;    
+    margin-left: 100px;
+    width:270px;
+    /*width:20%;*/
+    border-radius:25px;
+  }
+  .bottomborder{
+    max-width:500000000000000000000;
+    width:100%;
+    background-color:#cacfcc;
+    border-radius:25px;
+    text-align: center;
+  }
+  #logo1{
+    width:260px;
+    margin-left: 100px;
+    float:left;
+}
+#btn{
+    color:black;
+    text-decoration:none;
+}
+#btn:hover{
+    box-shadow: 0 0 0 10px rgba(113, 119, 128,.5);
+    background-color:rgba(113, 119, 128,.5);
+    border-radius: 8px;
+    transition:0.7s;
+}
+.h7{
+  text-align: center;
+  margin: 80px;
+}
+#hallimg2{
+  border-radius: 20px;
+  margin:30px;
+  float:left;
+  max-width: 600px;
+  width:100%
+}
+#btnhall{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 300px;
+  font-size: 18px;
+  border-radius:20px;
+  margin:8px;
+  text-align: center;
+}
+#logbox{
+  height: 40px;
+  max-width:340px;
+  width:90%;
+  border-radius: 20px;
+  text-align:center;
+  border:solid 1px black;
+}
+#logbut{
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 300px;
+  font-size: 18px;
+  border-radius:20px;
+  margin:8px;
+}
+#logbut:hover {
+  opacity: 0.7;
+  transition: 0.7s;
+}
+#sinen{
+  color:black;
+  text-decoration:none;
+}
+#sinen:hover{
+  text-decoration:underline;
+  transition:0.7s;
+}
+#mes{
+  width:500px;
+  height: 300px;
+  border-radius: 20px;
+  border:solid 1px black;
+}
+.aboutmain1{
+  text-align: center;
+  font-style: italic;
+  font-family:'Times New Roman', Times, serif;
+}
+.halls1{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+}
+#btnhall:hover{
+  opacity: 0.7;
+  transition: 0.7s;
+}
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display:inline-block;
+  color:white;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  left: 70px;
+  bottom:-310px;
+  border-radius: 25px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color:#000;
+  border-radius: 25px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {display: block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {background-color: #3e8e41;}
+#facebook{
+  width:50px;
+  margin:8px;
+}
+#instagram{
+  width:65px;
+  margin:8px;
+}
+#github{
+  width:48px;
+  margin:8px;
+}
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+#ahmed{
+  border-radius: 200000px;
+  width:200px;
+}
+.logindown {
+  position: relative;
+  display:inline-block;
+  color:white;
+  float:right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.logindown-content {
+  display:none;
+  position: absolute;
+  background-color: white;
+  color:white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  right: -2px;
+  top:80px;
+  border-radius: 25px;
+}
+
+/* Links inside the dropdown */
+.logindown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.logindown-content a:hover {
+  background-color: #ddd;
+  color:#000;
+  border-radius: 25px;
+}
+
+/* Show the dropdown menu on hover */
+.logindown:hover .logindown-content {display: inline-block;}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.logindown:hover .dropbtn {background-color: #3e8e41;}
